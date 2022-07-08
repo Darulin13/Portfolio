@@ -50,9 +50,10 @@ export const Li = styled.li`
     }
 `
 export const Seta = styled.img`
-    width:5%;
+    width:100%;
+    cursor:pointer;
    @media(max-width:425px){
-      width:10%; 
+      width:100%; 
    }
     
 `

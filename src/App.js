@@ -2,6 +2,8 @@ import React from "react"
 import { createGlobalStyle } from "styled-components";
 import Header from "./Components/Header"
 import Project from "./Components/Project"
+import About from "./Components/About"
+import Contact from "./Components/Contact";
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -16,6 +18,8 @@ export default function App() {
     <GlobalStyle />
       <Header />
       <Project />
+      <About/>
+      <Contact/>
       
   </>
   )

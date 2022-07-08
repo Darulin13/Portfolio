@@ -30,7 +30,7 @@ export  const Box = styled.div`
     justify-content: center;
     row-gap: 20px;
     column-gap: 20px;
-    padding-bottom:400px;
+    padding-bottom:200px;
     @media(max-width:1024px){
         grid-template-columns:repeat(3,1fr);    
     }

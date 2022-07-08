@@ -1,8 +1,14 @@
 import React from "react";
 import * as S from "./styles"
+import { Link } from "react-scroll";
 
 export default function Header (){
     const NavegationPage = ()=>{
+        const linkStyle = {
+            border: "solid",
+            width:"5%"
+        
+        };
         return(
             <S.NavBar>
                 <S.Logo> JP </S.Logo>
@@ -11,7 +17,8 @@ export default function Header (){
                     <S.Li>Sobre</S.Li>
                     <S.Li>Contato</S.Li>
                 </S.Ul>
-                <S.Seta src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Seta"/>
+                <Link to="Project" style={linkStyle} >  <S.Seta src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Seta"/> </Link>
+               
             </S.NavBar>
         )
 
