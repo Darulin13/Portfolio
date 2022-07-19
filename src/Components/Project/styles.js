@@ -5,26 +5,26 @@ export  const Container= styled.section`
     display:flex;
     flex-direction:column;
     align-items:center;
-    border:solid red;
+
     article{
         width:90%;
         display:flex;
         flex-direction:column;
         align-items:center;
-        border:solid blue;
+ 
     }
 
 `
 export  const Title = styled.section`
     font-size:6rem;
-    padding-bottom:40px;
+    padding-bottom:5vw;
+    padding-top:5vw;
     @media(max-width:414px){
         font-size:4rem;
     }
 `
 export  const Box = styled.div`
     width:100%;
-    border:solid orange;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     justify-content: center;
@@ -43,6 +43,15 @@ export  const Box = styled.div`
 `
 export  const Poster = styled.img`
 width:100%;
-border:solid green;
+height:12vw;
+@media(max-width:1024px){
+    height:15vw;
+}
+@media(max-width:425px){
+    height:40vw;  
+}
+
+
+
   
 `

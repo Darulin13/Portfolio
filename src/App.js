@@ -4,6 +4,9 @@ import Header from "./Components/Header"
 import Project from "./Components/Project"
 import About from "./Components/About"
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import OnuPage from "./Components/OnuPage"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -13,15 +16,19 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 export default function App() {
-  return(
-    <>
-    <GlobalStyle />
+  return (
+    <Router>
+      <GlobalStyle />
       <Header />
-      <Project />
-      <About/>
-      <Contact/>
-      
-  </>
+      <Routes>
+        <Route path="/" element={<Project />} />
+        <Route path="/OnuPage" element={<OnuPage />} />
+      </Routes>
+      <About />
+      <Contact />
+      <Footer/>
+    </Router>
+
   )
-  
+
 }
