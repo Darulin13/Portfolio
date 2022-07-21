@@ -14,11 +14,12 @@ export  const Container= styled.section`
     }
     `
 export  const Title= styled.h1`
-    font-size:6rem;
+    font-size:6vw;
     padding-bottom:2vw;
     padding-top:2vw;
     @media(max-width:414px){
-        font-size:4rem;
+        font-size:18vw;
+        padding-bottom:8vw;
     }
     `
 export  const Paragraph= styled.p`
@@ -27,6 +28,10 @@ export  const Paragraph= styled.p`
     text-align:center;
     padding-bottom:40px;
     font-size:2.5rem;
+    a{
+        text-decoration:none;
+        color:purple;
+    }
     @media(max-width:1440px){
         font-size:1rem;
     }

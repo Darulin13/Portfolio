@@ -13,7 +13,7 @@ export  const Container= styled.section`
    
     `
 export  const Title= styled.h1`
-    font-size:5vw;
+    font-size:6vw;
     padding-bottom:2vw;
     padding-top:2vw;
     @media(max-width:414px){
@@ -89,6 +89,7 @@ export const Button = styled.button`
     background-color:black;
     color:white;
     border:none;
+    cursor:pointer;
     @media(max-width:690px){
         padding-top:2.2vw;
         padding-bottom:2vw; 

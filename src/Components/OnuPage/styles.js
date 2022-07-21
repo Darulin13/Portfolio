@@ -66,6 +66,7 @@ export const Box = styled.div`
     background-color:red;
     padding-bottom:0.3vw;
     padding-top:0.3vw;
+    cursor:pointer;
 
     article{
        
@@ -109,5 +110,62 @@ export const Box = styled.div`
         padding-top:0.5vw;
     }
 
+`
+//Modal
+export const Modal = styled.section`
+    width:100%;
+    display:flex;
+    flex-direction:column;
+
     
+    
+`
+export const Barra = styled.section`
+    width:90%;
+    background-color:orange;
+    display:flex;
+    flex-direction:row; 
+    justify-content:space-evenly;
+    
+    padding-top:5vw;
+    padding-bottom:5vw;
+   
+    article{
+        display:flex;
+        flex-direction:column;
+        width:60%;
+    }
+    h2{
+        font-size:10vw;
+        font-weight:400;
+        color:white;
+    }
+    h3{
+        color:white;
+        font-size:4vw;
+    }
+    p{
+        color:white;
+        font-size:2vw;
+        width:75%;
+        padding-top:2vw;
+        
+    }
+    img{
+        width:30%;
+        
+    }
+`
+export const Metas = styled.section`
+    padding-bottom:6vw;
+    p{
+        font-size:1.3vw;
+        padding-bottom:1.5vw;
+    }
+    h3{
+        font-size:1.5vw;
+        width:70%;
+        padding-bottom:1.5vw;
+        padding-top:3vw;
+    }
 `

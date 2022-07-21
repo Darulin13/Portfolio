@@ -12,25 +12,34 @@ export default function Project() {
             {
                 name: "Recipes",
                 banner: Recipes,
+                link: "https://62d99fe582aea000aedad520--voluble-snickerdoodle-338ddf.netlify.app/",
             },
             {
                 name: "Todoflix",
                 banner: Todoflix,
+                link: "https://inspiring-shaw-52512e.netlify.app/",
             },
             {
                 name: "Portflow",
                 banner: Portflow,
+                link: "https://darulin13.github.io/Portflow/",
             },
             {
-                name: "vnw",
+                name: "Vai na Web Blog",
                 banner: vnw,
+                link: "https://inspiring-shaw-52512e.netlify.app/",
             },
             {
-                name: "",
+                name: "ULOAX",
                 banner: "https://i.pinimg.com/564x/6b/17/13/6b1713430a5e40fbae0a72312b9dcfdf.jpg",
+                link: "https://inspiring-shaw-52512e.netlify.app/",
             }
 
         ]
+    const linkStyle = {
+        textDecoration: "none",
+
+    };
     const box = () => {
         return (
             <S.Container id="Project">
@@ -40,12 +49,18 @@ export default function Project() {
                     <S.Box>
                         {
                             data.map((item) => (
-                                <S.Poster src={item.banner} alt={item.name} />
+
+                                <S.Div href={item.link} target="_blank">
+                                    <S.Poster src={item.banner} alt={item.name} />
+                                    <h2>{item.name} </h2>
+                                </S.Div>
+
                             ))
                         }
 
-                        <Link to="/OnuPage" >
+                        <Link style={linkStyle} to="/OnuPage" >
                             <S.Poster src={Onu} alt="OnuPage" />
+                            <S.H2>Onu Page </S.H2>
                         </Link>
 
                     </S.Box>

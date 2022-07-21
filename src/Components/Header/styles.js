@@ -1,8 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Component = styled.section`
-
-color:red;`
+`
+//Animation
+const titleAnimation = keyframes`
+0%{
+  
+   color:transparent;
+}
+100%{
+    color:white;
+}
+`
 //Navegation Page
 export const NavBar = styled.nav`
     width:100%;
@@ -29,10 +38,12 @@ export const Logo = styled.div`
 
   
     h1{ 
-         color:black; 
+      color:black; 
       font-size:10vw;  
-      padding-bottom:5vw
+      padding-bottom:5vw;
+      animation:${titleAnimation} 2s linear 2s infinite;
     }
+  
 
 `
 export const Ul = styled.ul`
@@ -43,7 +54,11 @@ export const Ul = styled.ul`
 
    padding-top:40px;
    padding-bottom:200px;
-
+   @media(max-width:577px){
+    padding-top:2vw;
+    padding-bottom:0px;
+    
+ }
 `
 export const Li = styled.li`
     list-style:none;
@@ -55,12 +70,31 @@ export const Li = styled.li`
     @media(max-width:577px){
        display:none;
     }
+    &:hover{
+        color:white; 
+    }
 `
 export const Seta = styled.img`
     width:100%;
     cursor:pointer;
+  
    @media(max-width:425px){
       width:100%; 
+      
    }
     
+`
+//Menu hamburguer
+export const Hamb = styled.img`
+ width:30%;
+ display:none;
+ @media(max-width:577px){
+    width:15%; 
+    display:flex;
+    position:relative;
+    bottom:04vw;
+    padding-top:2vw;
+    padding-bottom:2vw;
+    
+ }
 `

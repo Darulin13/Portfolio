@@ -6,11 +6,12 @@ export default function About() {
     const Info = () => {
         return (
             <S.Container >
-                <div/>
-                <S.Title id="About">Sobre</S.Title>
-                <S.Paragraph>Sou um parágrafo. Clique aqui para editar o seu texto. É fácil! Basta clicar em "Editar Texto" ou clicar duas vezes para adicionar o seu conteúdo e trocar fontes. Sou um ótimo lugar para você contar sua história.
+                <div id="About" />
+                <S.Title >Sobre</S.Title>
+                <S.Paragraph>
+                    Olá! Sou o João Pedro, desenvolvedor Front-end apaixonado por React e estilização. Atualmente estou cursando o <a href="https://www.vainaweb.com.br/" target="_blank">Vai na Web</a> e me empenhado em melhorar minhas aplicações web. Conheça mais sobre meu trabalho e estudos aqui no meu site.
                 </S.Paragraph>
-                <div/>
+                <div />
             </S.Container>
         )
     }
