@@ -15,7 +15,10 @@ export const Container = styled.section`
         align-items:center;
  
     }
-
+    @media(max-width:425px){
+        background-color:black;
+    
+    }
 `
 export const Title = styled.h1`
     font-size:6vw;
@@ -23,6 +26,7 @@ export const Title = styled.h1`
     padding-top:5vw;
     @media(max-width:414px){
         font-size:16vw;
+        color:white;
     }
 `
 export const Box = styled.div`
@@ -56,7 +60,11 @@ height:12vw;
 &:hover{
     filter: brightness(50%);
 }
+@media(max-width:425px){
+    border:solid 2px white; 
+    transition:all .3s linear;
 
+}
 `
 export const Div = styled.a`
     text-decoration:none;
@@ -74,10 +82,12 @@ export const Div = styled.a`
         font-weight:200;
         color:transparent;
        
+       
     }
     h2:hover{
        color:white;
     }
+    
 `
 export const H2 = styled.h2`
     position:relative;

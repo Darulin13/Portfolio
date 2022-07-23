@@ -51,12 +51,16 @@ export const Ul = styled.ul`
    display:flex;
    flex-direction:row;
    justify-content:space-between;
-
    padding-top:40px;
    padding-bottom:200px;
+
    @media(max-width:577px){
-    padding-top:2vw;
-    padding-bottom:0px;
+    width:70%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-top:0;
+    padding-bottom:0;
     
  }
 `
@@ -67,34 +71,26 @@ export const Li = styled.li`
     @media(max-width:828px){
         font-size:2rem;
     }
-    @media(max-width:577px){
-       display:none;
-    }
+    
     &:hover{
         color:white; 
     }
+    @media(max-width:577px){
+       color:white;
+        padding-top:1vw;
+        padding-bottom:4vw;
+      
+        
+     }
 `
 export const Seta = styled.img`
     width:100%;
     cursor:pointer;
+   
   
    @media(max-width:425px){
       width:100%; 
       
    }
     
-`
-//Menu hamburguer
-export const Hamb = styled.img`
- width:30%;
- display:none;
- @media(max-width:577px){
-    width:15%; 
-    display:flex;
-    position:relative;
-    bottom:04vw;
-    padding-top:2vw;
-    padding-bottom:2vw;
-    
- }
 `

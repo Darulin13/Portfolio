@@ -31,7 +31,7 @@ export default function Project() {
             },
             {
                 name: "ULOAX",
-                banner: "https://i.pinimg.com/564x/6b/17/13/6b1713430a5e40fbae0a72312b9dcfdf.jpg",
+                banner: "https://media.graphassets.com/r5mCq8mCSwS3DRcHhzFW",
                 link: "https://inspiring-shaw-52512e.netlify.app/",
             }
 

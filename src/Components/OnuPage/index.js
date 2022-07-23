@@ -1,10 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as S from "./styles"
 import Book from "./icons/Education.svg"
 import Lixo from "./icons/lixo.svg"
 import Bus from "./icons/Bus.svg"
 import Oil from "./icons/Oil.svg"
-export default function OnuPage() {
+
+export default function OnuPage(props) {
   const data = [
     {
       id: 1,
@@ -51,36 +52,38 @@ export default function OnuPage() {
       phase4: "1.4 Automatizar funções de pagamento em ônibus, implementando transações monetárias via internet e débito automático em conta ",
     },
   ]
-  const manipularCor = useRef()
-  const handleCor = () => {
-    manipularCor.current.style.backgroundColor = "blue"
-  }
-  //Info
-  const [info, setInfo] = useState(null)
+
+  //Info Modal
+  const [info, setInfo] = useState([])
   const [listInfo, setlistInfo] = useState([])
-  const [modal, setModal] = useState(false)
-  const handleInfo = (item) => {
-    setInfo(item)
-    setlistInfo(listInfo.concat(info))
-    console.log("teste", info)
-    console.log("teste 3", listInfo)
-    setModal(true)
+  //Abrir Modal
+  const Modal = (id) => {
+    
+      setInfo(data.filter((item) => item === id))
+      setlistInfo(listInfo.concat(info))
+    
+
+
   }
-  const Clean = () => {
-    setInfo(null)
+  //Fechar
+  const remove = () => {
+    setlistInfo([])
+
   }
+
+
 
 
 
 
   return (
     <S.Container>
-      <S.Title>Os Objetivos de Desenvolvimento Sustentável no meu bairro</S.Title>
+      <S.Title>Os Objetivos de Desenvolvimento Sustentável no Camarão</S.Title>
       <S.Paragraph>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.</S.Paragraph>
       <S.Mural>
         {
           data.map((item, index) => (
-            <S.Box ref={manipularCor} key={index} item={item} onClick={() => handleInfo(item)} >
+            <S.Box key={index} onClick={() => Modal(item)} >
               <article>
                 <h2>{item.number}</h2>
                 <h3>{item.title}</h3>
@@ -88,11 +91,32 @@ export default function OnuPage() {
               <img src={item.img} alt={item.title} />
             </S.Box>
           ))}
+
       </S.Mural>
-      
+
+      {listInfo.map((item, index) => (
+        <S.ModalBox key={index}>
+          <S.Barra >
+            <article>
+              <h2>{item.number}</h2>
+              <h3>{item.title}</h3>
+              <p>{item.objetivo}</p>
+            </article>
+            <img src={item.img} />
+            <button onClick={remove} >X</button>
+
+          </S.Barra>
 
 
-
+          <S.Metas>
+            <h3>{item.objetivo}</h3>
+            <p>{item.phase1}</p>
+            <p>{item.phase2}</p>
+            <p>{item.phase3}</p>
+            <p>{item.phase4}</p>
+          </S.Metas>
+        </S.ModalBox>
+      ))}
 
 
 
