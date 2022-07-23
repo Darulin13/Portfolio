@@ -15,19 +15,19 @@ export default function Project() {
                 link: "https://62d99fe582aea000aedad520--voluble-snickerdoodle-338ddf.netlify.app/",
             },
             {
-                name: "Todoflix",
-                banner: Todoflix,
-                link: "https://inspiring-shaw-52512e.netlify.app/",
+                name: "Dog Generator",
+                banner: "https://dog.ceo/img/dog-api-logo.svg",
+                link: "https://62dc72cba363656651531448--resilient-truffle-973c8f.netlify.app/",
             },
             {
                 name: "Portflow",
                 banner: Portflow,
-                link: "https://darulin13.github.io/Portflow/",
+                link: "https://62dc73dd509fb6686bdcc6f4--merry-froyo-ef23e8.netlify.app/",
             },
             {
-                name: "Vai na Web Blog",
-                banner: vnw,
-                link: "https://inspiring-shaw-52512e.netlify.app/",
+                name: "Persona Desktop",
+                banner: "https://meups.com.br/wp-content/uploads/2022/06/Persona-5-Royal.jpg",
+                link: "https://csb-xuccj.netlify.app/",
             },
             {
                 name: "ULOAX",

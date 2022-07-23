@@ -5,6 +5,10 @@ import Lixo from "./icons/lixo.svg"
 import Bus from "./icons/Bus.svg"
 import Oil from "./icons/Oil.svg"
 
+import { Link } from "react-router-dom";
+
+
+
 export default function OnuPage(props) {
   const data = [
     {
@@ -72,12 +76,18 @@ export default function OnuPage(props) {
   }
 
 
+  const linkStyle = {
+    textDecoration: "none",
+    color:"black"
 
+};
 
 
 
   return (
     <S.Container>
+      
+
       <S.Title>Os Objetivos de Desenvolvimento Sustentável no Camarão</S.Title>
       <S.Paragraph>Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.</S.Paragraph>
       <S.Mural>
@@ -91,9 +101,10 @@ export default function OnuPage(props) {
               <img src={item.img} alt={item.title} />
             </S.Box>
           ))}
+          <S.Back> <Link  style={linkStyle} to="/">Voltar</Link></S.Back>
+             
 
-      </S.Mural>
-
+      </S.Mural> 
       {listInfo.map((item, index) => (
         <S.ModalBox key={index}>
           <S.Barra >
@@ -104,7 +115,7 @@ export default function OnuPage(props) {
             </article>
             <img src={item.img} />
             <button onClick={remove} >X</button>
-
+     
           </S.Barra>
 
 

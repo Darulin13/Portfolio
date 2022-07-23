@@ -111,6 +111,17 @@ export const Box = styled.div`
     }
 
 `
+export const Back = styled.p`
+    align-self:center;
+    font-size:2vw;
+   
+    @media(max-width:774px){
+        font-size:4.5vw;
+      }
+
+   
+
+`
 //Modal
 export const ModalBox = styled.section`
     width:100%;

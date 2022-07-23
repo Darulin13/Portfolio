@@ -6,7 +6,7 @@ import About from "./Components/About"
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import OnuPage from "./Components/OnuPage"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
