@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import * as S from "./styles"
 import Book from "./icons/Education.svg"
 import Lixo from "./icons/lixo.svg"
@@ -113,7 +113,7 @@ export default function OnuPage(props) {
               <h3>{item.title}</h3>
               <p>{item.objetivo}</p>
             </article>
-            <img src={item.img} />
+            <img src={item.img} alt={item.title}/>
             <button onClick={remove} >X</button>
      
           </S.Barra>
