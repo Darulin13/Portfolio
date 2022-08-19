@@ -3,6 +3,7 @@ import * as S from "./styles"
 import Recipes from "./images/Recipes.png"
 import Portflow from "./images/Portflow.png"
 import Onu from "./images/onu.png"
+import todoflix from "./images/todoflix.png"
 import { Link } from "react-router-dom";
 export default function Project() {
     const data =
@@ -10,17 +11,17 @@ export default function Project() {
             {
                 name: "Recipes",
                 banner: Recipes,
-                link: "https://62d99fe582aea000aedad520--voluble-snickerdoodle-338ddf.netlify.app/",
+                link: "https://recipessite.netlify.app/",
             },
             {
                 name: "Dog Generator",
-                banner: "https://dog.ceo/img/dog-api-logo.svg",
-                link: "https://62dc72cba363656651531448--resilient-truffle-973c8f.netlify.app/",
+                banner: "https://www.programmableweb.com/sites/default/files/dogceo_0.jpg",
+                link: "https://dogshow-api.netlify.app/",
             },
             {
                 name: "Portflow",
                 banner: Portflow,
-                link: "https://62dc73dd509fb6686bdcc6f4--merry-froyo-ef23e8.netlify.app/",
+                link: "https://portflow-site.netlify.app/",
             },
             {
                 name: "Persona Desktop",
@@ -29,9 +30,31 @@ export default function Project() {
             },
             {
                 name: "ULOAX",
-                banner: "https://media.graphassets.com/r5mCq8mCSwS3DRcHhzFW",
+                banner: "https://i.pinimg.com/originals/ed/0e/a8/ed0ea8456bdbd5c74aae8d777f4841ce.jpg",
                 link: "https://inspiring-shaw-52512e.netlify.app/",
-            }
+            },
+            {
+                name: "Todoflix",
+                banner:todoflix,
+                link: "https://todoflix.netlify.app/",
+            },
+            {
+                name: "Rick and Morty",
+                banner: "https://images.ctfassets.net/t11jt6iul2n5/ys4KvcRUjeig0cC2yk6yO/dd17c10d46b207d2d30d7dd0a1d597f1/rickmorty.jpeg?w=960&h=533&fl=progressive&q=50&fm=jpg",
+                link: "https://rick-and-morty-api-site.netlify.app/",
+            },
+            {
+                name: "Movie Database",
+                banner: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDr6uAkqVh2OWwZ8OqM8wSy56Rvgraxa03CzVIyECdiTPb2YkzmrTYnO9XAsH_Xl-cOEA&usqp=CAU",
+                link: "https://database-clone.netlify.app/",
+            },
+            {
+                name: "Estudio Ghibli",
+                banner: "https://ghibliapi.herokuapp.com/images/logo.svg",
+                link: "https://estudio-ghibli.netlify.app/",
+            },
+
+
 
         ]
     const linkStyle = {
